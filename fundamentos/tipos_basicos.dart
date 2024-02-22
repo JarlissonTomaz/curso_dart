@@ -26,4 +26,17 @@ main() {
   bool muitoFrio = false;
 
   print(estaChovendo && muitoFrio);
+
+  dynamic x = "Um texto bem legal";
+  print(x);
+
+  x = 123;
+  print(x);
+
+  x = false;
+  print(x);
+
+  var y = "Outro texto bem legal";
+  //y = 123;
+  print(y);
 }
