@@ -9,11 +9,11 @@ main() {
   addRandomNumbers();
 }
 
-sum(int a, int b) {
+void sum(int a, int b) {
   print(a + b);
 }
 
-addRandomNumbers() {
+void addRandomNumbers() {
   var a = Random().nextInt(11);
   var b = Random().nextInt(11);
   print(a + b);
