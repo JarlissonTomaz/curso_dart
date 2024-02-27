@@ -12,7 +12,7 @@ main() {
     return x + y;
   };
 
-  print(sum2(a, b));
-
   print(sum1(a, b));
+
+  print(sum2(a, b));
 }
