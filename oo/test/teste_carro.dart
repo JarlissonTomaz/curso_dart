@@ -12,4 +12,8 @@ main() {
     carroDeTeste.frear();
     print(carroDeTeste.velocidadeAtual);
   }
+
+  carroDeTeste.velocidadeAtual = 5;
+
+  print(carroDeTeste.velocidadeAtual);
 }
