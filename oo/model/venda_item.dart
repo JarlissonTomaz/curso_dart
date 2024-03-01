@@ -4,11 +4,15 @@ class VendaItem {
   Produto? produto;
   int? quantidade;
   double? _preco;
-  double? desconto;
 
-  get precoComDesconto {
-    if (precoComDesconto > 0) {
-      return (1 - desconto!) * _preco!;
+  VendaItem({
+    this.produto,
+    this.quantidade = 1,
+  });
+
+  get preco {
+    if (produto != null) {
+      return _preco = produto?.precoComDesconto();
     }
     return _preco;
   }

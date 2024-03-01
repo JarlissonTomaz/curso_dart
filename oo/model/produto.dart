@@ -2,16 +2,15 @@ class Produto {
   int? codigo;
   String? nome;
   double? preco;
-  double? desconto;
+  double desconto = 0.15;
 
   Produto({
     this.codigo,
     this.nome,
     this.preco,
-    this.desconto,
   });
 
   double? precoComDesconto() {
-    return (1 - desconto!) * preco!;
+    return (1 - desconto) * preco!;
   }
 }
